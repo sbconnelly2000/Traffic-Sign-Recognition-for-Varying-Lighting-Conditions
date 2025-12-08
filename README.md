@@ -3,35 +3,27 @@ flowchart TD
 
 A[Start: Load Input Image] --> B[Convert to HSV]
 B --> C[Compute V-Channel Histogram]
-C --> D[Flatten and Reshape Histogram]
 
-D --> E[Load PCA Model]
-E --> F[Apply PCA Transform]
+C --> D[Apply PCA Transform]
 
-F --> G[Load FCM Cluster Centers]
-G --> H[Compute Distances to Centers]
-H --> I[Compute Fuzzy Membership Probabilities]
+D --> E[Compute Distances to Centers]
+E --> F[Compute Fuzzy Membership Probabilities]
 
-I --> J{Max Probability < 0.5?}
+F --> G{Max Probability < 0.5?}
 
-J -- Yes --> K[Label = Ambiguous and Use General YOLO Model]
-J -- No --> L[Label = Cluster ID]
+G -- Yes --> H[Label = Ambiguous and Use General YOLO Model]
+G -- No --> I[Label = Cluster ID]
 
-L --> M{Cluster ID?}
-M -- 0 --> M0[Select YOLO Model 0]
-M -- 1 --> M1[Select YOLO Model 1]
-M -- 2 --> M2[Select YOLO Model 2]
-M -- 3 --> M3[Select YOLO Model 3]
+I --> J{Cluster ID?}
+J -- 0 --> J0[Select YOLO Model 0]
+J -- 1 --> J1[Select YOLO Model 1]
+J -- 2 --> J2[Select YOLO Model 2]
+J -- 3 --> J3[Select YOLO Model 3]
 
-K --> N
-M0 --> N
-M1 --> N
-M2 --> N
-M3 --> N
-N[Run Selected YOLO Model] --> O[Display Detection Result]
-
-O --> P[Run General YOLO Model for Comparison]
-P --> Q[Display Comparison Result]
-
-Q --> R[End]
+H --> K
+J0 --> K
+J1 --> K
+J2 --> K
+J3 --> K
+K[Run Selected YOLO Model]
 ```
