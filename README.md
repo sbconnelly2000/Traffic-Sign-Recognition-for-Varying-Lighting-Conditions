@@ -1,3 +1,4 @@
+mermaid'''
 flowchart TD
 
 A[Start: Load Input Image] --> B[Convert to HSV]
@@ -32,3 +33,4 @@ O --> P[Run General YOLO Model for Comparison]
 P --> Q[Display Comparison Result]
 
 Q --> R[End]
+'''
