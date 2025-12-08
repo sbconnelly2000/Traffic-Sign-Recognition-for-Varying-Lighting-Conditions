@@ -1,6 +1,6 @@
-train: C:\Users\sbcon\TSR_PAPER_CODE_Before_cluster\cluster_0\dataset/train/images
-val: C:\Users\sbcon\TSR_PAPER_CODE_Before_cluster\cluster_0\dataset/val/images
-test: C:\Users\sbcon\TSR_PAPER_CODE_Before_cluster\cluster_0\dataset/test/images
+train: C:\Users\sbcon\TSR_PAPER_CODE_Before_cluster\cluster_3\dataset/train/images
+val: C:\Users\sbcon\TSR_PAPER_CODE_Before_cluster\cluster_3\dataset/val/images
+test: C:\Users\sbcon\TSR_PAPER_CODE_Before_cluster\cluster_3\dataset/test/images
 
 nc: 15
 names: ['Green Light', 'Red Light', 'Speed Limit 10', 'Speed Limit 100', 'Speed Limit 110', 'Speed Limit 120', 'Speed Limit 20', 'Speed Limit 30', 'Speed Limit 40', 'Speed Limit 50', 'Speed Limit 60', 'Speed Limit 70', 'Speed Limit 80', 'Speed Limit 90', 'Stop']
