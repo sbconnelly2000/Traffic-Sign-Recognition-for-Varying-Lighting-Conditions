@@ -14,8 +14,8 @@ F -- No --> H[Label = Cluster ID]
 
 H --> I{Cluster ID?}
 I -- 0 --> I0[Select YOLO Model 0]
-I -- 1 --> I1[Select YOLO Model 1]
-I -- 2 --> I2[Select YOLO Model 2]
+I -- 1 --> I1[Select YOLO Model 0]
+I -- 2 --> I2[Select YOLO Model 3]
 I -- 3 --> I3[Select YOLO Model 3]
 
 G --> J[Run Selected YOLO Model]
