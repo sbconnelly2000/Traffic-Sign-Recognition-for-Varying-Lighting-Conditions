@@ -9,7 +9,7 @@ BINS_V = [32]
 image = cv2.imread("street_sign_test.jpg")
 image = cv2.resize(image, (416, 416))
 
-print("loading models")
+
 yolo_model_0 = YOLO("cluster_0/runs/detect/train2/weights/best.pt", task = 'detect')
 yolo_model_1 = YOLO("cluster_1/runs/detect/train/weights/best.pt", task = 'detect')
 yolo_model_2 = YOLO("cluster_2/runs/detect/train/weights/best.pt", task = 'detect')
