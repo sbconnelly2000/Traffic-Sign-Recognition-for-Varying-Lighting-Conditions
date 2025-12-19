@@ -77,5 +77,7 @@ python3 predict_image.py
 ## Results
 This system showed that it may be viable way to perform object detection in various lighting conditions. To confirm this more research must be done with a larger dataset.
 
+Total Pipeline runs in 10 ms.
+
 A more detailed report can be found in research_paper.pdf
 
